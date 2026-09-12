@@ -1,25 +1,25 @@
 class Pdo < Formula
   desc "Prompt-Driven Orchestrator — a local daemon that runs and supervises agentic coding pipelines"
   homepage "https://github.com/Loulen/prompt-driven-orchestrator"
-  version "1.84.0"
+  version "1.84.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Loulen/prompt-driven-orchestrator/releases/download/v1.84.0/pdo-daemon-aarch64-apple-darwin.tar.xz"
-      sha256 "4c495f5553d6204ee7da38073b9f8c7f192343318c32398c46695709ca66a151"
+      url "https://github.com/Loulen/prompt-driven-orchestrator/releases/download/v1.84.1/pdo-daemon-aarch64-apple-darwin.tar.xz"
+      sha256 "76730f7413b52aa453888473b519ac0fc0b30f46dfed7cd6b96e50a891f5cc8a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Loulen/prompt-driven-orchestrator/releases/download/v1.84.0/pdo-daemon-x86_64-apple-darwin.tar.xz"
-      sha256 "df64e07a2ae5b99c9d97d4b0bb65f95e3d65d8673a98d5033f333e86453cd8fa"
+      url "https://github.com/Loulen/prompt-driven-orchestrator/releases/download/v1.84.1/pdo-daemon-x86_64-apple-darwin.tar.xz"
+      sha256 "3aa41aef04c6ec017912b6ea6ace742182a974415219b50072b06fd87568a914"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Loulen/prompt-driven-orchestrator/releases/download/v1.84.0/pdo-daemon-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "7bedd8bfe267ca6432f6dd0de2b7d31a7295a1bdacfac2f5f9f6fbb8fc73fbe2"
+      url "https://github.com/Loulen/prompt-driven-orchestrator/releases/download/v1.84.1/pdo-daemon-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "dd97a00017f22d78d759be047e36a282b0b81a3f2e3b7ff3acbb18b9cbfbdd15"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Loulen/prompt-driven-orchestrator/releases/download/v1.84.0/pdo-daemon-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "49df78537a529065f9776bd51152143d58f31c48c41fe529e3a9b6c6625f5500"
+      url "https://github.com/Loulen/prompt-driven-orchestrator/releases/download/v1.84.1/pdo-daemon-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a7d2953fa02135a854d9204d444d07e9945a6e872d252be16d8cea20ebf2f903"
     end
   end
   license "MIT"

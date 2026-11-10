@@ -1,28 +1,28 @@
 class Pdo < Formula
   desc "Prompt-Driven Orchestrator — a local daemon that runs and supervises agentic coding pipelines"
   homepage "https://github.com/Loulen/prompt-driven-orchestrator"
-  version "1.126.0"
+  version "2.76.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Loulen/prompt-driven-orchestrator/releases/download/v1.126.0/pdo-daemon-aarch64-apple-darwin.tar.xz"
-      sha256 "86ed24d25c61e5e3528ee37c3f7f06f11045d6e94dcb3e36af320a247ceb284a"
+      url "https://github.com/Loulen/prompt-driven-orchestrator/releases/download/v2.76.1/pdo-daemon-aarch64-apple-darwin.tar.xz"
+      sha256 "ddb0d2a8996c58bc157986ddc6e587c5cbd2c313210895619a40daac620b577a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Loulen/prompt-driven-orchestrator/releases/download/v1.126.0/pdo-daemon-x86_64-apple-darwin.tar.xz"
-      sha256 "7ed411c3f3d5901ed7c18da81079e7705ab86f4dc5274d56fa3248f144dbcc58"
+      url "https://github.com/Loulen/prompt-driven-orchestrator/releases/download/v2.76.1/pdo-daemon-x86_64-apple-darwin.tar.xz"
+      sha256 "9ecb59a7cafb529b9f6fb6902ae54c0d5350265c397a0c4e1cad147a321a53b1"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Loulen/prompt-driven-orchestrator/releases/download/v1.126.0/pdo-daemon-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "91970ad10d84eb678d01abe765f5dcd112f45e1870ec31232eae7482be56afc3"
+      url "https://github.com/Loulen/prompt-driven-orchestrator/releases/download/v2.76.1/pdo-daemon-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "5a82e7ef1d55970323c9d58f5452520f98de993593aab9c2ed6a0c1bb4407a13"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Loulen/prompt-driven-orchestrator/releases/download/v1.126.0/pdo-daemon-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "83227794ad07c75156cda46ab35407aa97974534c1b475b9831a8bbfe143763b"
+      url "https://github.com/Loulen/prompt-driven-orchestrator/releases/download/v2.76.1/pdo-daemon-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "5604c41e32c4c3ebe47fc44818a9fd54c170780cd3f5ec85f7c6f2396e4c4ce9"
     end
   end
-  license "MIT"
+  license "Apache-2.0"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},

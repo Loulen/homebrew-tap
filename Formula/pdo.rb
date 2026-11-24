@@ -1,25 +1,25 @@
 class Pdo < Formula
   desc "Prompt-Driven Orchestrator — a local daemon that runs and supervises agentic coding pipelines"
   homepage "https://github.com/Loulen/prompt-driven-orchestrator"
-  version "2.89.1"
+  version "2.90.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Loulen/prompt-driven-orchestrator/releases/download/v2.89.1/pdo-daemon-aarch64-apple-darwin.tar.xz"
-      sha256 "28045b158ebb568065791e57943455129ff000a60f33e912727f6fa5df0d2997"
+      url "https://github.com/Loulen/prompt-driven-orchestrator/releases/download/v2.90.0/pdo-daemon-aarch64-apple-darwin.tar.xz"
+      sha256 "dd8fdc723cb8a71bb6b9ab1c3a5791ad5716634ab279c4eb0f91d3cf2c130ef0"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Loulen/prompt-driven-orchestrator/releases/download/v2.89.1/pdo-daemon-x86_64-apple-darwin.tar.xz"
-      sha256 "11cf3770a24c2a49e51d8656998a16d050414743154e8f20268bd4ab7a1a3206"
+      url "https://github.com/Loulen/prompt-driven-orchestrator/releases/download/v2.90.0/pdo-daemon-x86_64-apple-darwin.tar.xz"
+      sha256 "e7660d6f8803dc80562597100884fea43e605f7005e6bcc541ef4b4a27f60320"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Loulen/prompt-driven-orchestrator/releases/download/v2.89.1/pdo-daemon-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "5427b3c37be4a8d20f00ea9357c31147291c795b18223e7eeb7fff08e9c65087"
+      url "https://github.com/Loulen/prompt-driven-orchestrator/releases/download/v2.90.0/pdo-daemon-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "441e9f490f0e011d93f187aaa6f09f465e5a116e6bcd015b4b88651530270d67"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Loulen/prompt-driven-orchestrator/releases/download/v2.89.1/pdo-daemon-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "327a5bf6b6f4d357670a85fa74c60df2549b4aef4b025c8abb3c4e72490d1363"
+      url "https://github.com/Loulen/prompt-driven-orchestrator/releases/download/v2.90.0/pdo-daemon-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "fbe8765181ac0c0dc0f434112e569abc35bf91c70327d94bc06e55b72ce370e2"
     end
   end
   license "Apache-2.0"
